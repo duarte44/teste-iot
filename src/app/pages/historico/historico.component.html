@@ -1,0 +1,40 @@
+<app-header  [title]="nomeTitle"    ></app-header> 
+  <mat-card>
+ 
+   
+    <table class="table " >
+        <thead >
+         <tr class="header">
+           <th >id </th>
+           <th >nome </th>
+        
+           <th >Temperatura  <mat-icon>filter_list</mat-icon></th>
+         </tr>
+        </thead><br>
+    <tbody class="body">
+     <tr >  
+
+     
+      <ng-template ngFor let-temp [ngForOf]="getAllTempo">
+      <td>{{temp.id.S.toLowerCase()}}</td>
+      </ng-template>
+
+      
+      <ng-template ngFor let-temp [ngForOf]="getAllTempo">
+        <td><p>Cozinha</p></td>
+        </ng-template>
+  
+   
+        <ng-template ngFor let-temp [ngForOf]="getAllTempo">
+          <td>{{temp.temperatura.S.substring(2, -1).toLowerCase()}}º</td>
+          </ng-template>
+    
+      
+    </tbody>
+ </table>
+</mat-card>
+ 
+  <h1>
+
+  </h1>
+  
